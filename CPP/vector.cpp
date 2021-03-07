@@ -29,7 +29,7 @@ int main()
 
     // 4.assign，赋值操作，适合批量赋值使用,同样是第一个参数是个数，第二个是数值
     vector<int> ass;
-    ass.assign(5,77);
-    cout<<"ass.size()"<<ass.size()<<endl;
-    cout<<"ass[4]    "<<ass[4]<<endl;
+    ass.assign(5, 77);
+    cout << "ass.size()" << ass.size() << endl;
+    cout << "ass[4]    " << ass[4] << endl;
 }
