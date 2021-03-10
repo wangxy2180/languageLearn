@@ -15,7 +15,11 @@ void mp_display(const unordered_map<T, P> &in)
 
 int main()
 {
-    cout << "123" << endl;
+    // 0.初始化
+    unordered_map<string, int> init;
+    init = {{"jack",19},{"aba",22}};
+
+    
     unordered_map<string, int> age;
     // 一些经典用法
     // 1.插入 增
