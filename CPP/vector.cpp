@@ -32,4 +32,17 @@ int main()
     ass.assign(5, 77);
     cout << "ass.size()" << ass.size() << endl;
     cout << "ass[4]    " << ass[4] << endl;
+
+    // 5.交换位置
+    cout << "swap:";
+    vector<int> vec = {1, 2, 3, 4, 5, 6, 7};
+    swap(vec[1], vec[6]);
+    for (auto k : vec)
+        cout << k << ",";
+
+    // 6.清除操作
+    cout<<endl<<"erase: ";
+    vec.erase(vec.begin()+3);
+    for (auto k : vec)
+        cout << k << ",";
 }
