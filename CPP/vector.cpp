@@ -41,8 +41,20 @@ int main()
         cout << k << ",";
 
     // 6.清除操作
-    cout<<endl<<"erase: ";
-    vec.erase(vec.begin()+3);
+    cout << endl
+         << "erase: ";
+    vec.erase(vec.begin() + 3);
     for (auto k : vec)
         cout << k << ",";
+    cout<<endl;
+
+    // 7.插入操作，在开头插入
+    vector<int> vec7(3, 1);
+    vec7.insert(vec7.begin(), 999);
+    cout << "front insert: ";
+    for (int i = 0; i < vec7.size(); ++i)
+    {
+        cout << vec7[i] << ", ";
+    }
+    cout << endl;
 }
