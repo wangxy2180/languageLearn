@@ -19,6 +19,8 @@ int main()
     // 0.初始化
     unordered_map<string, int> init;
     init = {{"jack", 19}, {"aba", 22}};
+    // 或者这样初始化，他不用()去初始化
+    unordered_map<int, int> init2{{1,2},{3,4}};
 
     unordered_map<string, int> age;
     // 一些经典用法
