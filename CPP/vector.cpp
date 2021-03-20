@@ -1,5 +1,6 @@
 #include <vector>
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -46,7 +47,7 @@ int main()
     vec.erase(vec.begin() + 3);
     for (auto k : vec)
         cout << k << ",";
-    cout<<endl;
+    cout << endl;
 
     // 7.插入操作，在开头插入
     vector<int> vec7(3, 1);
@@ -56,5 +57,13 @@ int main()
     {
         cout << vec7[i] << ", ";
     }
+    cout << endl;
+
+    // 8.翻转
+    vector<int> la({1, 2, 3, 4, 5});
+    reverse(la.begin(),la.end());
+    cout<<"reverse: ";
+    for (auto k : la)
+        cout << k << ", ";
     cout << endl;
 }
