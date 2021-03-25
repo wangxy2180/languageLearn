@@ -61,9 +61,17 @@ int main()
 
     // 8.翻转
     vector<int> la({1, 2, 3, 4, 5});
-    reverse(la.begin(),la.end());
-    cout<<"reverse: ";
+    reverse(la.begin(), la.end());
+    cout << "reverse: ";
     for (auto k : la)
+        cout << k << ", ";
+    cout << endl;
+
+    // 9 排序
+    vector<int> srt({4, 3, 5, 1, 6, 1, 6, 26});
+    sort(srt.begin(), srt.end());
+    cout << "sort: ";
+    for (auto k : srt)
         cout << k << ", ";
     cout << endl;
 }

@@ -30,3 +30,4 @@ print('mile_dict\n',mile_dict)
 # 生成随机
 a=[np.random.random() for _ in range(50)]
 print(a)
+
