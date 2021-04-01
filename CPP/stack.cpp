@@ -19,4 +19,9 @@ int main()
     // 把栈顶的内容删除，返回值为void
     s1.pop();
     cout<<s1.top()<<endl;
+
+    // 你也可以直接对top的值进行修改
+    s1.top()=99;
+    cout<<s1.top()<<endl;
+
 }
