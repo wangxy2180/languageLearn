@@ -22,11 +22,20 @@ public:
 
     // 元素增删
     void push_back(const string &str) { data->push_back(str); }
-    void pop_back() {}
+    void pop_back() {
+        check(0,"pop_back on empty StrBlob");
+        data->pop_back();
+    }
 
     // 元素访问
-    string &front() {}
-    string &back() {}
+    string &front() {
+        check(0,"front on empty StrBlob");
+        return data->front();
+    }
+    string &back() {
+        check(0,"back on empty StrBlob");
+        return data->back();
+    }
 
     ~StrBlob();
 
