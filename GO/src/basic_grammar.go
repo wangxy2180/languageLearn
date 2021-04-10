@@ -12,7 +12,8 @@ type Books struct {
 	book_id int
 }
 
-func main() {
+// func main() {
+func Basic_grammar() {
 
 	// 1、变量声明########################################
 	// go语言声明变量的方式很特别，var var_name var_type[ = value]
@@ -20,7 +21,7 @@ func main() {
 	// var result int
 	var num1 int = 100
 	var num2 int = 101
-	fmt.Println("max value is %d", max(num1, num2))
+	fmt.Println("max value is", max(num1, num2))
 
 	// 也可以直接使用等于，不声明数据类型，让他自己判断
 	var str1 = "str1"
