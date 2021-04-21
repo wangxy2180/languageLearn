@@ -74,4 +74,7 @@ int main()
     for (auto k : srt)
         cout << k << ", ";
     cout << endl;
+
+    //10 最大值
+    cout<<*max_element(srt.begin(),srt.end())<<endl;;
 }
