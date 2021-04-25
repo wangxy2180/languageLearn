@@ -19,9 +19,13 @@ int main()
 
     int ival = 1024;
     int &refval = ival;
-    cout << refval << ",";
+    cout << "refval:" << refval << "," << endl;
     refval = 1000;
-    cout << ival << ",";
+    cout << "ival  :" << ival << ",";
+    // 地址是
+    cout << "address:" << endl;
+    cout << "refval:" << &refval << "," << endl
+         << "ival  :" << &ival << "," << endl;
     // 用指针做同样的事情
     int *p;
     p = &ival;
@@ -34,14 +38,11 @@ int main()
     // int &&rr=i;
     // 上边这句编译时会报错，不能绑定右值引用int&&到左值int
     // 但，可以通过move函数强行绑定右值引用到左值、
-    int &&rr2=std::move(i);
-    cout<<rr2<<endl;
-    
-    int &&rr=i*10;
-    cout<<rr<<endl;
-    
+    int &&rr2 = std::move(i);
+    cout << rr2 << endl;
 
-
+    int &&rr = i * 10;
+    cout << rr << endl;
 
     cout << "==========================================" << endl;
     cout << "==========================================" << endl;
