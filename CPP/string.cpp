@@ -29,4 +29,9 @@ int main()
     string str4 = "abcdefghijklmn";
     string substr4 = str4.substr(0, 3);
     cout << "substr4: " << substr4 << endl;
+
+    // 5. 字符串的拼接
+    string a = "123";
+    str4+=a;
+    cout<<str4<<endl;
 }

@@ -20,6 +20,9 @@ int main()
     pair<int, int> p3 = p2;
     p3.first = 1;
     cout << "= copy construct, value not pointer: " << p2.first << endl;
+// 大规模初始化时要这样写
+    pair<int, string> mp[] = {
+        {1, "I"}, {2, "II"}, {3, "III"}, {4, "IV"}, {5, "V"}, {9, "IX"}, {10, "X"}, {40, "XL"}, {50, "L"}, {90, "XC"}, {100, "C"}, {400, "CD"}, {500, "D"}, {900, "CM"}, {1000, "M"}};
 
     // 还可以用tie函数，不过这就是一种高级的用法了，我也不懂,需要include<tuple>
     // C++函数：std::tie 详解https://www.cnblogs.com/RioTian/p/14076214.html
