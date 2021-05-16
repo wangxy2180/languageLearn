@@ -44,6 +44,7 @@ int main()
         cout << "not found" << endl;
     else
         cout << "[" << index->first << ":" << index->second << "]" << endl;
+    cout<<"age[tom]:"<<age["tom"]<<endl;
 
     // count是为了找到元素的个数，可以是1或者0
     cout << age.count("steven") << "," << age.count("jjj") << endl;
