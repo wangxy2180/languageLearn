@@ -30,6 +30,13 @@ int main()
     int age;
     std::tie(name, age) = get_person();
     cout << "name: " << name << ",age: " << age << endl;
+
+    // 比大小,只比较first元素
+    pair<int, int> pp1(6, 9);
+    pair<int, int> pp2(1, 10);
+    std::cout<<"max pair.first: "<<max(pp1,pp2).first<<std::endl;
+    std::cout<<"min pair.first: "<<min(pp1,pp2).first<<std::endl;
+
 }
 
 pair<string, int> get_person()
