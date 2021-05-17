@@ -48,3 +48,10 @@ int main()
     cout << "==========================================" << endl;
     cout << "==========================================" << endl;
 }
+
+void test_const_ref(const int &input)
+{
+    // 下边的报错，因为input是const的
+    // input=10;
+
+}
