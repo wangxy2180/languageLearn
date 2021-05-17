@@ -31,7 +31,6 @@ def harris(image):
 
     # cv2.imwrite('new_bird.jpg', image)
     cv2.imshow("harris", image2)
-    cv2.
 
 def shi_tomasi(image):
     image2=copy.deepcopy(image)
@@ -58,11 +57,11 @@ def fast_detect(image):
 if __name__=="__main__":
     image = cv2.imread('test_pic.jpg')
     harris(image)
-    cv2.imshow("image",image)
-
-    shi_tomasi(image)
+    # cv2.imshow("image",image)
 
     fast_detect(image)
+
+    shi_tomasi(image)
 
     cv2.waitKey(30000)
     cv2.destroyAllWindows()
