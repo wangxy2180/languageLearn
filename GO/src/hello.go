@@ -11,5 +11,5 @@ import (
 // 这里一定要注意，{不能单独防止再一行
 func main() {
 	fmt.Println("hello world")
-	Basic_grammar()
+	// Basic_grammar()
 }
