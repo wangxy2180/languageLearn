@@ -52,4 +52,13 @@ int main()
     // 5. 直接使用STL的函数，查找的是key的最大值
     unordered_map<int, int> mp5({{3, 1}, {2, 9}, {1, 10}});
     cout << "maxelement: " << max_element(mp5.begin(), mp5.end())->first << "," << max_element(mp5.begin(), mp5.end())->second << endl;
+
+    // 6. unordered_map转vector，需要使用pair
+    unordered_map<char, int> mp;
+    for(auto k : s)
+    {
+        mp[k]++;
+    }
+    vector<pair<char, int>> vec(mp.begin(),mp.end());
+    sort(vec.begin(),vec.end(),[](pair<char, int> a, pair<char, int> b){return a.second>b.second;});
 }
