@@ -35,4 +35,12 @@ int main()
     // 显然pos3的值是第一个小于等于6的值，pos4是第一个小于的值
     cout<<"lower_bound: "<<pos3<<endl;
     cout<<"upper_bound: "<<pos4<<endl;
+
+    cout<<"-----------------------------------"<<endl;
+    // 还是记不住啊
+    double thres=2.1;
+    int pos5 = lower_bound(inc.begin(),inc.end(),thres,[](const int a,const double b){
+        cout<<a<<","<<b<<endl;
+        return a<b; })-inc.begin();
+    cout<<"lower_bound with lambda: "<<pos5<<endl;
 }
