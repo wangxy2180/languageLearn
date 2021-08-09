@@ -14,14 +14,4 @@ int main()
     cout<<aaa.square().sum()<<endl;
     cout<<"-----------------"<<endl;
 
-    
-    Array<double,4,1> bbb;
-    bbb<<1,2,3,4;
-    cout<<bbb<<endl;
-
-    bbb.template topRows<4 - 1>() = bbb.template bottomRows<4 - 1>();
-
-        bbb(3)=5;
-    cout<<bbb<<endl;
-
 }
