@@ -17,6 +17,7 @@ int main()
     // 让最上边的3个值等于最后边的3个值，两个size必须一样
     tr.template topRows<4 - 1>() = tr.template bottomRows<4 - 1>();
     cout<<tr<<endl;
+    cout<<"sum "<<tr.topRows<4-2>().sum()<<endl;
 
         // 一定要注意最核心的那两个template，像下边这样写会造成歧义
     // topRows<4 - 1>() = bottomRows<4 - 1>();
