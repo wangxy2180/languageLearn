@@ -55,7 +55,8 @@ def fast_detect(image):
     cv2.imshow("fast2",image2)
 
 if __name__=="__main__":
-    image = cv2.imread('test_pic.jpg')
+    image = cv2.imread('frame_00000475.png')
+    # image = cv2.imread('test_pic.jpg')
     harris(image)
     # cv2.imshow("image",image)
 
