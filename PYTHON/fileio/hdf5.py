@@ -1,3 +1,6 @@
+import pandas as pd
+# pandas也可以进行hdf读取
+
 # 读取HDF5文件中的所有数据集
 def traverse_datasets(hdf_file):
     import h5py
