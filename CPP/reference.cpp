@@ -9,6 +9,8 @@ using namespace std;
  * 不能取地址的，没有名字的，临时的，就是右值；如函数的返回值，立即数
  */
 
+void test(int&& a);
+
 int main()
 {
     // 左值引用 ,和指针是一样的
@@ -19,9 +21,10 @@ int main()
 
     int ival = 1024;
     int &refval = ival;
+    // 这里两个变量指向同一个地址，修改同一个值
     cout << "refval:" << refval << "," << endl;
     refval = 1000;
-    cout << "ival  :" << ival << ",";
+    cout << "ival  :" << ival << ","<<endl;;
     // 地址是
     cout << "address:" << endl;
     cout << "refval:" << &refval << "," << endl

@@ -37,9 +37,11 @@ int main()
     a.set_rate(7.0);
     std::cout << b.m_rate << std::endl; //7
     std::cout << a.m_rate << std::endl; //7
-
     // 这两个的输出是一样的，证明这个静态只有一份，一个改了，所有的都改了
-
+    
+    // 也可以通过直接访问变量的方式去修改
+    a.m_rate = 9;
+    std::cout << b.m_rate << std::endl; //9
 
     // 下边的就不能这么用
     // Account::set_data();
