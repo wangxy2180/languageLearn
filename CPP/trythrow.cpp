@@ -1,6 +1,24 @@
 #include <iostream>
 #include <stdexcept>
 
+using namespace std;
+
+void test(int a)
+{
+    try
+    {
+        if (a == 1)
+        {
+            throw -1;
+        }
+    }
+    catch (...)
+    {
+        std::cerr << "throw test:" << '\n';
+    }
+    cout << "test end" << endl;
+}
+
 int main()
 {
     int a = 2;
@@ -47,4 +65,6 @@ int main()
         // 以防万一的一句
         std::cerr << "any type expection" << std::endl;
     }
+    test(1);
+    cout << "main end" << endl;
 }

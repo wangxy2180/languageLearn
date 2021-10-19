@@ -76,18 +76,27 @@ int main()
     cout << endl;
 
     //10 最大值
-    cout<<*max_element(srt.begin(),srt.end())<<endl;
+    cout << *max_element(srt.begin(), srt.end()) << endl;
 
     // 11定长的vector如何添加
-    cout<<"---------------11----------------"<<endl;
+    cout << "---------------11----------------" << endl;
     vector<int> vec_11(5);
-    cout<<"src_vec_11_len:"<<vec_11.size()<<endl;
+    cout << "src_vec_11_len:" << vec_11.size() << endl;
     // 似乎对于定长的部分，只能使用下标去访问了
     // 如果你直接push_back，他会在后边再新加
     vec_11.push_back(11);
-    cout<<"dst_vec_11_len:"<<vec_11.size()<<endl;
+    cout << "dst_vec_11_len:" << vec_11.size() << endl;
     // 下边这条指令不会对长度有任何变化
     vec_11.shrink_to_fit();
-    cout<<"shk_vec_11_len:"<<vec_11.size()<<endl;
+    cout << "shk_vec_11_len:" << vec_11.size() << endl;
 
+    cout << "---------------12----------------" << endl;
+    // 12.vector的尺寸扩充
+    // 他是一个2倍关系的扩充
+    vector<int> vec_size;
+    for (int i = 0; i < 18; ++i)
+    {
+        cout << "vec.size:" << vec_size.size() << ", vec.capacity:" << vec_size.capacity() << endl;
+        vec_size.push_back(i);
+    }
 }
