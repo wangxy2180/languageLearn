@@ -3,9 +3,10 @@ def make_group(input_ls,group_size):
     for k in input_ls:
         group.append(k)
         if len(group)==group_size:
+            # yield 通过产生生成器，还有生成器表达式
             yield tuple(group)
             group=group[1:]
-
+ 
 def main():
     input_ls=[1,2,3,4,5,6,7,8,9]
     # 无法直接调用，下边这样是不会返回的，必须通过迭代器（循环）访问
